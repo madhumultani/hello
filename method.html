@@ -1,0 +1,29 @@
+<!doc>
+<html>
+<head>
+    <script type="text/javascript">
+        //constructor function
+        function score(maths, hindi){
+            this.maths= maths;
+            this.hindi= hindi;
+            this.total= average;//add methods to object
+        }
+        function average(){
+            var sum = this.maths + this.hindi;
+            return sum;
+        }
+        var madhu= new score(10,20);
+        var aditi = new score(30,40);
+    </script>
+
+
+</head>
+<body>
+<script type="text/javascript">
+   document.write(aditi.total());
+   document.write(madhu.total());
+
+</script>
+
+</body>
+</html>
